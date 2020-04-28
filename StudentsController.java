@@ -28,7 +28,6 @@ public class StudentsController {
             System.out.println("Enter your student of phone:");
             int phone = scanner.nextInt();
             students.setPhone(phone);
-            statement.executeUpdate("INSERT INTO students VALUES ('" + students.getId() + "', '" + students.getName() + "', '" + students.getAddress() + "', 0" + students.getPhone() + " );" );
 
         } catch (SQLException e) {
             e.printStackTrace();
